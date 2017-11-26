@@ -118,9 +118,11 @@
   <ItemGroup>
     <ClCompile Include="code\main.cpp" />
     <ClCompile Include="code\Shaders\BlurShader\BlurShader.cpp" />
+    <ClCompile Include="code\Shaders\ColorShader\ColorShader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Shaders\BlurShader\BlurShader.h" />
+    <ClInclude Include="code\Shaders\ColorShader\ColorShader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

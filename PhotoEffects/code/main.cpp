@@ -2,6 +2,7 @@
 
 /* Shaders */
 #include "Shaders\BlurShader\BlurShader.h"
+#include "Shaders\ColorShader\ColorShader.h"
 
 int main(int argc, char **argv)
 {
@@ -18,10 +19,12 @@ int main(int argc, char **argv)
 		std::cout << std::endl;
 		std::cout << "<Shader option>: " << std::endl;
 		std::cout << "-b	(Blur Shader)	Add some unsharpness to the image" << std::endl;
+		std::cout << "-c	(Color Shader)  Summerizes color values to create a colorful image" << std::endl;
 		std::cout << "-s	(Sketch Shader)	Will only show the outlines of the image" << std::endl;
 		std::cout << std::endl;
 		std::cout << "<Intensity>" << std::endl;
 		std::cout << "For Blur Shader: The radius in which pixels influence there adjacent" << std::endl;
+		std::cout << "For Color Shader: The radius in which the pixels' color values are summerized (Using values higher than 1 will end in a strange looking unusable image)" << std::endl;
 		return 1;
 	}
 
@@ -42,6 +45,19 @@ int main(int argc, char **argv)
 		}
 
 		BlurShader::ProcessImage(argv[1], Intensity);
+		return 1;
+	}
+
+	/* If the user wants to use the Color Shader... */
+	if (strcmp(argv[2], "-c") == 0)
+	{
+		int Intensity = 1;				//Set Intensity to default value 
+		if (argc >= 4)
+		{
+			Intensity = atoi(argv[3]); // If the user has set the intensity use it 
+		}
+
+		ColorShader::ProcessImage(argv[1], Intensity);
 		return 1;
 	}
 

@@ -2,6 +2,7 @@
 
 void BlurShader::ProcessImage(std::string ImagePath, int Intensity)
 {
+	std::cout << "Running Blur Shader v.1.0 with Intensity: " << Intensity << std::endl;
 	sf::Image image, newImage;
 	
 	/* Try to load image */

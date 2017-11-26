@@ -1,4 +1,5 @@
-﻿  BlurShader.cpp
+﻿  ColorShader.cpp
+  BlurShader.cpp
   main.cpp
   Code wird generiert...
   PhotoEffects.vcxproj -> C:\Users\micha\Desktop\PhotoEffects\Debug\PhotoEffects.exe

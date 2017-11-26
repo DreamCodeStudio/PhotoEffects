@@ -31,6 +31,12 @@
     <Filter Include="Quelldateien\Shaders\SketchShader">
       <UniqueIdentifier>{56803839-d674-4b93-b502-1c78ad11c581}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headerdateien\Shaders\ColorShader">
+      <UniqueIdentifier>{3e415853-ab00-46c8-8cd5-733c86603a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Shaders\ColorShader">
+      <UniqueIdentifier>{83f645d1-03d8-4260-99a9-7a77e424511e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\main.cpp">
@@ -39,10 +45,16 @@
     <ClCompile Include="code\Shaders\BlurShader\BlurShader.cpp">
       <Filter>Quelldateien\Shaders\BlurShader</Filter>
     </ClCompile>
+    <ClCompile Include="code\Shaders\ColorShader\ColorShader.cpp">
+      <Filter>Quelldateien\Shaders\ColorShader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Shaders\BlurShader\BlurShader.h">
       <Filter>Headerdateien\Shaders\BlurShader</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Shaders\ColorShader\ColorShader.h">
+      <Filter>Headerdateien\Shaders\ColorShader</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
