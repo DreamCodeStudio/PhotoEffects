@@ -48,6 +48,9 @@
     <ClCompile Include="code\Shaders\ColorShader\ColorShader.cpp">
       <Filter>Quelldateien\Shaders\ColorShader</Filter>
     </ClCompile>
+    <ClCompile Include="code\Shaders\SketchShader\SketchShader.cpp">
+      <Filter>Quelldateien\Shaders\SketchShader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Shaders\BlurShader\BlurShader.h">
@@ -55,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="code\Shaders\ColorShader\ColorShader.h">
       <Filter>Headerdateien\Shaders\ColorShader</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Shaders\SketchShader\SketchShader.h">
+      <Filter>Headerdateien\Shaders\SketchShader</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

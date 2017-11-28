@@ -3,6 +3,7 @@
 /* Shaders */
 #include "Shaders\BlurShader\BlurShader.h"
 #include "Shaders\ColorShader\ColorShader.h"
+#include "Shaders\SketchShader\SketchShader.h"
 
 int main(int argc, char **argv)
 {
@@ -58,6 +59,19 @@ int main(int argc, char **argv)
 		}
 
 		ColorShader::ProcessImage(argv[1], Intensity);
+		return 1;
+	}
+	
+	/* If the user wants to use the Sketch Shader */
+	if (strcmp(argv[2], "-s") == 0)
+	{
+		int Intensity = 20;				//Set Intensity to default value 
+		if (argc >= 4)
+		{
+			Intensity = atoi(argv[3]); // If the user has set the intensity use it 
+		}
+
+		SketchShader::ProcessImage(argv[1], Intensity);
 		return 1;
 	}
 
