@@ -4,6 +4,7 @@
 #include "Shaders\BlurShader\BlurShader.h"
 #include "Shaders\ColorShader\ColorShader.h"
 #include "Shaders\SketchShader\SketchShader.h"
+#include "Shaders\NegativeShader\NegativeShader.h"
 
 int main(int argc, char **argv)
 {
@@ -24,8 +25,10 @@ int main(int argc, char **argv)
 		std::cout << "-s	(Sketch Shader)	Will only show the outlines of the image" << std::endl;
 		std::cout << std::endl;
 		std::cout << "<Intensity>" << std::endl;
-		std::cout << "For Blur Shader: The radius in which pixels influence there adjacent" << std::endl;
-		std::cout << "For Color Shader: The radius in which the pixels' color values are summerized (Using values higher than 1 will end in a strange looking unusable image)" << std::endl;
+		std::cout << "For Blur Shader:		The radius in which pixels influence there adjacent" << std::endl;
+		std::cout << "For Color Shader:		The radius in which the pixels' color values are summerized (Using values higher than 1 will end in a strange looking unusable image)" << std::endl;
+		std::cout << "For Sketch Shader:	If the difference of 2 pixels' RGB values is higher than Intensity the pixels will be colored black otherwise it will be white" << std::endl;
+		std::cout << "For Negative Shader:	Negative Shader ignores Intensity" << std::endl;
 		return 1;
 	}
 
@@ -72,6 +75,12 @@ int main(int argc, char **argv)
 		}
 
 		SketchShader::ProcessImage(argv[1], Intensity);
+		return 1;
+	}
+	if (strcmp(argv[2], "-n") == 0)
+	{
+		NegativeShader::ProcessImage(argv[1]);
+
 		return 1;
 	}
 

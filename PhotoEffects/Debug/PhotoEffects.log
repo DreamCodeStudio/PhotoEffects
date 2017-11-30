@@ -1,4 +1,5 @@
 ﻿  SketchShader.cpp
+  NegativeShader.cpp
   ColorShader.cpp
   BlurShader.cpp
   main.cpp

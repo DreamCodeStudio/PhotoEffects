@@ -119,11 +119,13 @@
     <ClCompile Include="code\main.cpp" />
     <ClCompile Include="code\Shaders\BlurShader\BlurShader.cpp" />
     <ClCompile Include="code\Shaders\ColorShader\ColorShader.cpp" />
+    <ClCompile Include="code\Shaders\NegativeShader\NegativeShader.cpp" />
     <ClCompile Include="code\Shaders\SketchShader\SketchShader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Shaders\BlurShader\BlurShader.h" />
     <ClInclude Include="code\Shaders\ColorShader\ColorShader.h" />
+    <ClInclude Include="code\Shaders\NegativeShader\NegativeShader.h" />
     <ClInclude Include="code\Shaders\SketchShader\SketchShader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
