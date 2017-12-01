@@ -20,9 +20,10 @@ int main(int argc, char **argv)
 		std::cout << "PhotoEffects <Path to image> <Shader option> <Intensity>" << std::endl;
 		std::cout << std::endl;
 		std::cout << "<Shader option>: " << std::endl;
-		std::cout << "-b	(Blur Shader)	Add some unsharpness to the image" << std::endl;
-		std::cout << "-c	(Color Shader)  Summerizes color values to create a colorful image" << std::endl;
-		std::cout << "-s	(Sketch Shader)	Will only show the outlines of the image" << std::endl;
+		std::cout << "-b	(Blur Shader)		Add some unsharpness to the image" << std::endl;
+		std::cout << "-c	(Color Shader)		Summerizes color values to create a colorful image" << std::endl;
+		std::cout << "-s	(Sketch Shader)		Will only show the outlines of the image" << std::endl;
+		std::cout << "-n	(Negative Shader)	Will invert the colors" << std::endl;
 		std::cout << std::endl;
 		std::cout << "<Intensity>" << std::endl;
 		std::cout << "For Blur Shader:		The radius in which pixels influence there adjacent" << std::endl;
