@@ -2,6 +2,7 @@
   NegativeShader.cpp
   ColorShader.cpp
   BlurShader.cpp
+  BlackWhiteShader.cpp
   main.cpp
   Code wird generiert...
-  PhotoEffects.vcxproj -> C:\Users\micha\Desktop\PhotoEffects\Debug\PhotoEffects.exe
+  PhotoEffects.vcxproj -> D:\programmieren\C++\Engines\SFML\PhotoEffects\Debug\PhotoEffects.exe

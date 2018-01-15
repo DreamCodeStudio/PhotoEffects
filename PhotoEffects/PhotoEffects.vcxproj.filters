@@ -43,6 +43,12 @@
     <Filter Include="Quelldateien\Shaders\NegativeShader">
       <UniqueIdentifier>{c936c3d1-2e49-49c8-a2e4-06da1c3e224c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headerdateien\Shaders\BlackWhiteShader">
+      <UniqueIdentifier>{2298c593-8c37-4dae-ae7f-af359a333646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Shaders\BlackWhiteShader">
+      <UniqueIdentifier>{3e1eecb2-3df8-4638-a5d1-912d1792819b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="code\main.cpp">
@@ -60,6 +66,9 @@
     <ClCompile Include="code\Shaders\NegativeShader\NegativeShader.cpp">
       <Filter>Quelldateien\Shaders\NegativeShader</Filter>
     </ClCompile>
+    <ClCompile Include="code\Shaders\BlackWhiteShader\BlackWhiteShader.cpp">
+      <Filter>Quelldateien\Shaders\BlackWhiteShader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="code\Shaders\BlurShader\BlurShader.h">
@@ -73,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="code\Shaders\NegativeShader\NegativeShader.h">
       <Filter>Headerdateien\Shaders\NegativeShader</Filter>
+    </ClInclude>
+    <ClInclude Include="code\Shaders\BlackWhiteShader\BlackWhiteShader.h">
+      <Filter>Headerdateien\Shaders\BlackWhiteShader</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -117,12 +117,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="code\main.cpp" />
+    <ClCompile Include="code\Shaders\BlackWhiteShader\BlackWhiteShader.cpp" />
     <ClCompile Include="code\Shaders\BlurShader\BlurShader.cpp" />
     <ClCompile Include="code\Shaders\ColorShader\ColorShader.cpp" />
     <ClCompile Include="code\Shaders\NegativeShader\NegativeShader.cpp" />
     <ClCompile Include="code\Shaders\SketchShader\SketchShader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="code\Shaders\BlackWhiteShader\BlackWhiteShader.h" />
     <ClInclude Include="code\Shaders\BlurShader\BlurShader.h" />
     <ClInclude Include="code\Shaders\ColorShader\ColorShader.h" />
     <ClInclude Include="code\Shaders\NegativeShader\NegativeShader.h" />

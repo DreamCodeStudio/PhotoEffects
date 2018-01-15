@@ -5,6 +5,7 @@
 #include "Shaders\ColorShader\ColorShader.h"
 #include "Shaders\SketchShader\SketchShader.h"
 #include "Shaders\NegativeShader\NegativeShader.h"
+#include "Shaders\BlackWhiteShader\BlackWhiteShader.h"
 
 int main(int argc, char **argv)
 {
@@ -24,12 +25,14 @@ int main(int argc, char **argv)
 		std::cout << "-c	(Color Shader)		Summerizes color values to create a colorful image" << std::endl;
 		std::cout << "-s	(Sketch Shader)		Will only show the outlines of the image" << std::endl;
 		std::cout << "-n	(Negative Shader)	Will invert the colors" << std::endl;
+		std::cout << "-w	(BlackWhite Shader) Creates a black-white image" << std::endl;
 		std::cout << std::endl;
 		std::cout << "<Intensity>" << std::endl;
-		std::cout << "For Blur Shader:		The radius in which pixels influence there adjacent" << std::endl;
-		std::cout << "For Color Shader:		The radius in which the pixels' color values are summerized (Using values higher than 1 will end in a strange looking unusable image)" << std::endl;
-		std::cout << "For Sketch Shader:	If the difference of 2 pixels' RGB values is higher than Intensity the pixels will be colored black otherwise it will be white" << std::endl;
-		std::cout << "For Negative Shader:	Negative Shader ignores Intensity" << std::endl;
+		std::cout << "For Blur Shader: The radius in which pixels influence there adjacent\n" << std::endl;
+		std::cout << "For Color Shader: The radius in which the pixels' color values are summerized (Using values higher than 1 will end in a strange looking unusable image)\n" << std::endl;
+		std::cout << "For Sketch Shader: If the difference of 2 pixels' RGB values is higher than Intensity the pixels will be colored black otherwise it will be white\n" << std::endl;
+		std::cout << "For Negative Shader: Ignores Intensity" << std::endl;
+		std::cout << "For BlackWhite Shader: Ignores Intensity" << std::endl;
 		return 1;
 	}
 
@@ -81,6 +84,12 @@ int main(int argc, char **argv)
 	if (strcmp(argv[2], "-n") == 0)
 	{
 		NegativeShader::ProcessImage(argv[1]);
+
+		return 1;
+	}
+	if (strcmp(argv[2], "-w") == 0)
+	{
+		BlackWhiteShader::ProcessImage(argv[1]);
 
 		return 1;
 	}
